@@ -1,8 +1,8 @@
 pipeline{
-
+	agent none
 	stages{
 		stage("build"){
-			step{
+			steps{
 				bat """
 					mvn exec:java
 				"""
